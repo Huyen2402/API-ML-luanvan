@@ -72,5 +72,4 @@ namespace WebApplication1
             return mlContext.Model.CreatePredictionEngine<ModelInput, ModelOutput>(mlModel);
         }
     }
-
 }

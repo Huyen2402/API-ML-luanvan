@@ -29,6 +29,7 @@ namespace WebApplication1.Controllers
             })
             .ToArray();
         }
+
         [HttpGet("Test")]
         public IActionResult Test(string data)
         {
@@ -40,6 +41,10 @@ namespace WebApplication1.Controllers
             if(pre.PredictedLabel == 1)
             {
                 return Ok(1);
+            }
+            if (pre.PredictedLabel == 2)
+            {
+                return Ok(2);
             }
             return Ok(0);
         }
